@@ -7,6 +7,8 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":libraries:api"))
+    implementation(project(":libraries:repositories"))
     implementation(UIDependencies.material)
     implementation(UIDependencies.constraintlayout)
     androidTestImplementation(AndroidTestingDependencies.espresso)
