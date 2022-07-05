@@ -8,5 +8,5 @@ object AppConfig {
     const val versionCode = 1
     const val versionName = "1.0"
 
-    const val baseUrlApiGoogleBooks = "\"https://hello-world.innocv.com/api/\""
+    const val baseUrlHelloWorldApi = "\"https://hello-world.innocv.com/\""
 }
