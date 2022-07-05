@@ -82,7 +82,6 @@ class SharedPropertiesPlugin: Plugin<Project> {
         project.dependencies {
             add(DependenciesType.IMPLEMENTATION.toString(), CoreDependencies.core_ktx)
             add(DependenciesType.IMPLEMENTATION.toString(), CoreDependencies.appcompat)
-            add(DependenciesType.IMPLEMENTATION.toString(), CoreDependencies.navigation_fragment)
             add(DependenciesType.ANDROID_TESTING.toString(), AndroidTestingDependencies.junit)
             add(DependenciesType.ANDROID_TESTING.toString(), AndroidTestingDependencies.espresso)
         }
