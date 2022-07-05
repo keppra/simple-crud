@@ -7,8 +7,11 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":features:base"))
     implementation(project(":libraries:api"))
     implementation(project(":libraries:repositories"))
+    implementation(CoreDependencies.navigation_fragment)
+    implementation(CoreDependencies.navigation_ui)
     implementation(UIDependencies.material)
     implementation(UIDependencies.constraintlayout)
     androidTestImplementation(AndroidTestingDependencies.espresso)

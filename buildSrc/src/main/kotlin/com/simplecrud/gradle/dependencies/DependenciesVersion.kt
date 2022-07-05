@@ -6,6 +6,7 @@ object DependenciesVersion {
     const val constraintlayout = "2.1.3"
     const val core_ktx = "1.7.0"
     const val espresso = "3.4.0"
+    const val fragment_navigation = "3.3.0"
     const val gradle = "7.1.3"
     const val junit = "4.13.2"
     const val koin = "3.1.6"

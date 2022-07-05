@@ -6,12 +6,13 @@ object BuildPlugins {
 }
 
 object CoreDependencies {
-    val appcompat = "androidx.appcompat:appcompat:${DependenciesVersion.appcompat}"
+    val appcompat by lazy { "androidx.appcompat:appcompat:${DependenciesVersion.appcompat}" }
     val core_ktx by lazy { "androidx.core:core-ktx:${DependenciesVersion.core_ktx}" }
     val gradle by lazy { "com.android.tools.build:gradle:${DependenciesVersion.gradle}" }
     val koin_core by lazy { "io.insert-koin:koin-core:${DependenciesVersion.koin}" }
     val koin_android by lazy { "io.insert-koin:koin-android:${DependenciesVersion.koin}" }
     val navigation_fragment by lazy { "androidx.navigation:navigation-fragment-ktx:${DependenciesVersion.nav_version}" }
+    val navigation_ui by lazy { "androidx.navigation:navigation-ui-ktx:${DependenciesVersion.nav_version}" }
     val okhttp by lazy { "com.squareup.okhttp3:okhttp:${DependenciesVersion.okhttp}" }
     val okhttp_logging_interceptor by lazy { "com.squareup.okhttp3:logging-interceptor:${DependenciesVersion.okhttp}" }
     val retrofit by lazy { "com.squareup.retrofit2:retrofit:${DependenciesVersion.retrofit}" }
@@ -33,7 +34,7 @@ object UIDependencies {
 object TestingDependencies {
     val junit by lazy { "junit:junit:${DependenciesVersion.junit}" }
     val koin by lazy { "io.insert-koin:koin-test:${DependenciesVersion.koin}" }
-    val koin_junit by lazy { "io.insert-koin:koin-test-junit4${DependenciesVersion.koin}" }
+    val koin_junit by lazy { "io.insert-koin:koin-test-junit4:${DependenciesVersion.koin}" }
 }
 
 object AndroidTestingDependencies {
