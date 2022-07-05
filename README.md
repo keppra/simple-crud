@@ -1,2 +1,2 @@
 # simple-crud
-Android App for an CRUD example application
+Android App for a CRUD example application
