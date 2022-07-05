@@ -1,7 +1,7 @@
 rootProject.name = "Simple Crud"
 include(
     ":app",
-    ":features:commonui",
+    ":features:common-ui",
     ":features:base",
     ":libraries:api",
     ":libraries:repositories"
