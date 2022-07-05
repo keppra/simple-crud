@@ -1,11 +1,11 @@
-package com.simplecrud.client.presentation.views
+package com.simplecrud.removeuser.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.simplecrud.client.R
+import com.simplecrud.removeuser.R
 
 class RemoveUserFragment : Fragment() {
 

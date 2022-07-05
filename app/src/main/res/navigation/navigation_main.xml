@@ -6,22 +6,22 @@
     app:startDestination="@id/summaryFragment">
     <fragment
         android:id="@+id/summaryFragment"
-        android:name="com.simplecrud.client.presentation.views.SummaryFragment"
+        android:name="com.simplecrud.summary.views.SummaryFragment"
         android:label="@string/summary"
         tools:layout="@layout/fragment_summary" />
     <fragment
         android:id="@+id/addUserFragment"
-        android:name="com.simplecrud.client.presentation.views.AddUserFragment"
+        android:name="com.simplecrud.adduser.views.AddUserFragment"
         android:label="@string/addUser"
         tools:layout="@layout/fragment_add_user" />
     <fragment
         android:id="@+id/listUsersFragment"
-        android:name="com.simplecrud.client.presentation.views.ListUsersFragment"
+        android:name="com.simplecrud.listusers.presentation.ListUsersFragment"
         android:label="@string/listUsers"
         tools:layout="@layout/fragment_list_users" />
     <fragment
         android:id="@+id/removeUserFragment"
-        android:name="com.simplecrud.client.presentation.views.RemoveUserFragment"
+        android:name="com.simplecrud.removeuser.views.RemoveUserFragment"
         android:label="@string/removeUser"
         tools:layout="@layout/fragment_remove_user" />
 </navigation>

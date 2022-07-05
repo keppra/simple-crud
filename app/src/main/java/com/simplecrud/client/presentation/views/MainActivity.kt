@@ -19,13 +19,13 @@ class MainActivity : BaseActivity() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
-        val appBarConfiguration = AppBarConfiguration(setOf(
+        /*val appBarConfiguration = AppBarConfiguration(setOf(
             R.id.summaryFragment,
             R.id.listUsersFragment,
             R.id.addUserFragment,
             R.id.removeUserFragment)
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        setupActionBarWithNavController(navController, appBarConfiguration)*/
 
         bottomNavigationView.setupWithNavController(navController)
     }

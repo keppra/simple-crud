@@ -1,20 +1,20 @@
-package com.simplecrud.client.presentation.views
+package com.simplecrud.listusers.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.simplecrud.client.R
+import com.simplecrud.listusers.R
 
-class SummaryFragment : Fragment() {
+class ListUsersFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_summary, container, false)
+        return inflater.inflate(R.layout.fragment_list_users, container, false)
     }
 
 }
