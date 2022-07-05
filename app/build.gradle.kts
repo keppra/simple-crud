@@ -8,6 +8,7 @@ plugins {
 
 dependencies {
     implementation(project(":features:base"))
+    implementation(project(":features:common-ui"))
     implementation(project(":libraries:api"))
     implementation(project(":libraries:repositories"))
     implementation(CoreDependencies.navigation_fragment)

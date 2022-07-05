@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Simple CRUD</string>
+    <string name="summary">Summary</string>
+    <string name="listUsers">List Users</string>
+    <string name="addUser">Add User</string>
+    <string name="removeUser">Remove User</string>
+</resources>

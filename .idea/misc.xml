@@ -4,7 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/SimpleCrud/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/activity_main.xml" value="0.11875" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_add_user.xml" value="0.11875" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_list.xml" value="0.11875" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_list_users.xml" value="0.1" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_remove_user.xml" value="0.1" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_summary.xml" value="0.11875" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/menu/bottom_navigation_items.xml" value="0.11875" />
       </map>
     </option>
   </component>
@@ -13,5 +20,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.11875" />
+      </ProjectState>
+    </option>
   </component>
 </project>
