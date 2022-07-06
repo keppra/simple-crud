@@ -6,6 +6,7 @@ import com.simplecrud.repositories.di.repositoriesModule
 import com.simplecrud.api.di.apiModule
 import com.simplecrud.client.di.routerModule
 import com.simplecrud.listusers.di.listUsersModule
+import com.simplecrud.removeuser.di.removeUserModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -22,6 +23,7 @@ class SimpleCrudApplication: Application() {
                     addUserModule,
                     apiModule,
                     listUsersModule,
+                    removeUserModule,
                     repositoriesModule,
                     routerModule
                 )

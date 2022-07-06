@@ -7,7 +7,10 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":features:base"))
     implementation(project(":features:common-ui"))
+    implementation(project(":libraries:repositories"))
+    implementation(project(":libraries:utils"))
     implementation(UIDependencies.material)
     implementation(UIDependencies.constraintlayout)
 }

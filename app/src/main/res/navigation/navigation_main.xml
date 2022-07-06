@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_list_users" />
     <fragment
         android:id="@+id/removeUserFragment"
-        android:name="com.simplecrud.removeuser.views.RemoveUserFragment"
-        android:label="@string/remove_user"
+        android:name="com.simplecrud.removeuser.presentation.views.RemoveUserFragment"
+        android:label="@string/remove_user_header"
         tools:layout="@layout/fragment_remove_user" />
 </navigation>

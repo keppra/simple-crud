@@ -6,17 +6,20 @@ import retrofit2.http.*
 import java.time.format.DateTimeFormatter
 
 interface ApiServices {
+
     @GET("api/User")
     fun getUsers(): Single<List<UserModel>>
 
-    @FormUrlEncoded
+    @Headers("Content-Type: application/json")
+    @POST("api/User")
+    fun addUser(@Body userModel: UserModel): Completable
+
     @Headers(
         "Accept: application/json",
         "Content-Type: application/json"
     )
-    @POST("api/User")
-    fun addUser(
-        @Field("name") name: String?,
-        @Field("birthdate") birthdate: String?
+    @DELETE("api/User/{id}")
+    fun removeUser(
+        @Path("id") id: Int?,
     ): Completable
 }

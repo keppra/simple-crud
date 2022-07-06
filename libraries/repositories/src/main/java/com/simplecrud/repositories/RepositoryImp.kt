@@ -13,4 +13,7 @@ class RepositoryImp(
 
     override fun addUser(user: UserDataModel): Completable =
         repository.addUser(user)
+
+    override fun removeUser(user: UserDataModel): Completable =
+        repository.removeUser(user)
 }

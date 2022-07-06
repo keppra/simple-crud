@@ -134,7 +134,7 @@ class AddUserViewModel(
 
     // Handlers //
 
-    private fun handleAddUserResult(result: Result<Int>) {
+    private fun handleAddUserResult(result: Result<Unit>) {
         when (result) {
             is Result.Success -> _viewActions.onNext(AddUserSuccessAction)
             is Result.Failure -> _viewActions.onNext(AddUserErrorAction(
@@ -173,7 +173,7 @@ class AddUserViewModel(
                 .doOnSubscribe { loadProgress(true) }
                 .doOnError { loadProgress(false) }
                 .doOnComplete { loadProgress(false) }
-                .andThen(Single.just(2))
+                .andThen(Single.just(Unit))
                 .toResult()
                 .subscribe(::handleAddUserResult)
         )
