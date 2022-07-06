@@ -100,6 +100,7 @@
             style="@style/OpenSansBold.Yellow.S"
             android:visibility="gone"
             tools:text="La contraseña no coincide"
+            android:textColor="@color/warning"
             tools:visibility="visible"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -171,6 +172,7 @@
             style="@style/OpenSansBold.Yellow.S"
             android:visibility="gone"
             tools:text="La contraseña no coincide"
+            android:textColor="@color/warning"
             tools:visibility="visible"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

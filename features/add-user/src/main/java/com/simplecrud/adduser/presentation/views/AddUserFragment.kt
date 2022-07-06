@@ -7,12 +7,15 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import com.simplecrud.adduser.R
 import com.simplecrud.adduser.databinding.FragmentAddUserBinding
 import com.simplecrud.adduser.presentation.viewmodels.AddUserViewModel
 import com.simplecrud.adduser.presentation.viewstates.*
 import com.simplecrud.base.presentation.BaseFragment
+import com.simplecrud.commonui.extensions.gone
+import com.simplecrud.commonui.extensions.visible
 import com.simplecrud.utils.extensions.TAG
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -62,16 +65,8 @@ class AddUserFragment : BaseFragment() {
             }
             is AddUserFormValidationResultViewState -> {
                 Log.d(TAG, "AddUserFormValidationResultViewState")
-                if (viewState.state.isNameValid) {
-                    //binding.cftvName.setStroke(true)
-                } else {
-                    //binding.cftvName.setStroke(false)
-                }
-                if (viewState.state.isBirthdateValid) {
-                    //binding.cftvBirthdate.setStroke(true)
-                } else {
-                    //binding.cftvBirthdate.setStroke(false)
-                }
+                shouldRenderValidationElements(viewState.state.isNameValid, TypeField.USERNAME.ordinal)
+                shouldRenderValidationElements(viewState.state.isBirthdateValid, TypeField.BIRTHDATE.ordinal)
             }
             is AddUserSuccessViewState -> {
                 Log.d(TAG, "AddUserSuccessViewState")
@@ -107,7 +102,7 @@ class AddUserFragment : BaseFragment() {
     // Setup Actions //
 
     private fun setupActions() {
-        binding.etBirthdate.addTextChangedListener(object: TextWatcher {
+        binding.etName.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
@@ -139,6 +134,36 @@ class AddUserFragment : BaseFragment() {
     private fun renderHints() {
         binding.tilName.hint = context?.getString(com.example.commonui.R.string.full_name)
         binding.tilBirthdate.hint = context?.getString(com.example.commonui.R.string.birthdate)
+        binding.tvValidationName.text = context?.getString(com.example.commonui.R.string.add_user_field_validation_name)
+        binding.tvValidationBirthdate.text = context?.getString(com.example.commonui.R.string.add_user_field_validation_birthdate)
+    }
+
+    private fun shouldRenderValidationElements(isValid: Boolean, typeField: Int) {
+        context?.let { context ->
+            when (typeField) {
+                TypeField.USERNAME.ordinal -> {
+                    if (!isValid) {
+                        binding.cvName.strokeWidth = 2
+                        binding.cvName.strokeColor = ContextCompat.getColor(context, com.example.commonui.R.color.warning)
+                        binding.tvValidationName.visible()
+                    } else {
+                        binding.cvName.strokeWidth = 0
+                        binding.tvValidationName.gone()
+                    }
+                }
+                TypeField.BIRTHDATE.ordinal -> {
+                    if (!isValid) {
+                        binding.cvBirthdate.strokeWidth = 2
+                        binding.cvBirthdate.strokeColor = ContextCompat.getColor(context, com.example.commonui.R.color.warning)
+                        binding.tvValidationBirthdate.visible()
+                    } else {
+                        binding.cvBirthdate.strokeWidth = 0
+                        binding.tvValidationBirthdate.gone()
+                    }
+                }
+            }
+        }
+
     }
 
     private fun renderProgress(show: Boolean) {
