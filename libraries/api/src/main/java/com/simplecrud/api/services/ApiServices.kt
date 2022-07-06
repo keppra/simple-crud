@@ -18,8 +18,8 @@ interface ApiServices {
         "Accept: application/json",
         "Content-Type: application/json"
     )
-    @POST("api/User/")
+    @DELETE("api/User/{id}")
     fun removeUser(
-        @Field("id") id: Int?,
+        @Path("id") id: Int?,
     ): Completable
 }
