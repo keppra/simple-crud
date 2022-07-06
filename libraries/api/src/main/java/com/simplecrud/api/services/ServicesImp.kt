@@ -9,6 +9,6 @@ class ServicesImp(
     override fun getUsers(): Single<List<UserModel>> =
         apiServices.getUsers()
 
-    override fun addUser(name: String, birthdate: String): Single<UserModel> =
+    override fun addUser(name: String?, birthdate: String?): Single<UserModel> =
         apiServices.addUser(name = name, birthdate = birthdate)
 }

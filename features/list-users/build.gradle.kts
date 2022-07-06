@@ -10,6 +10,10 @@ dependencies {
     implementation(project(":features:base"))
     implementation(project(":features:common-ui"))
     implementation(project(":libraries:repositories"))
-    implementation(UIDependencies.material)
+    implementation(project(":libraries:recyclerview-renders"))
+    implementation(project(":libraries:utils"))
     implementation(UIDependencies.constraintlayout)
+    implementation(UIDependencies.material)
+    implementation(UIDependencies.recyclerView)
+    implementation(UIDependencies.swipeRefreshLayout)
 }

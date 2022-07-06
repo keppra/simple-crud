@@ -6,7 +6,7 @@ import io.reactivex.rxjava3.core.Single
 interface Services {
     fun getUsers(): Single<List<UserModel>>
     fun addUser(
-        name: String,
-        birthdate: String
+        name: String?,
+        birthdate: String?
     ): Single<UserModel>
 }

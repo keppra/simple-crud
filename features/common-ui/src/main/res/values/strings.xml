@@ -1,7 +1,29 @@
 <resources>
     <string name="app_name">Simple CRUD</string>
     <string name="summary">Summary</string>
-    <string name="listUsers">List Users</string>
-    <string name="addUser">Add User</string>
-    <string name="removeUser">Remove User</string>
+    <string name="list_users">List Users</string>
+    <string name="add_user">Add User</string>
+    <string name="remove_user">Remove User</string>
+    <string name="error">Error</string>
+    <string name="loading">Loading</string>
+
+    <!-- Months -->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <!-- list-users -->
+    <string name="list_users_header">Los usuarios activos en nuestra base de datos son los siguientes:</string>
+    <string name="list_users_renderable_description">Active users in our database are:</string>
+    <string name="list_users_renderable_not_specified">This field was empty</string>
+    <string name="list_users_renderable_birthdate">%1s of %2s, %3s</string>
 </resources>

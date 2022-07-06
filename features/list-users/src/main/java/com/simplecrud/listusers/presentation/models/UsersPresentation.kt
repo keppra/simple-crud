@@ -1,6 +1,10 @@
 package com.simplecrud.listusers.presentation.models
 
-data class UsersPresentation(
+sealed class UsersPresentation
+
+object DescriptionPresentation: UsersPresentation()
+
+data class ItemPresentation(
     val name: String,
     val birthdate: String,
-)
+): UsersPresentation()

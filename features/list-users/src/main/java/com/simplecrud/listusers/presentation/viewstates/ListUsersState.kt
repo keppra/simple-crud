@@ -5,11 +5,12 @@ import com.simplecrud.commonui.state.ErrorTypeState
 import com.simplecrud.listusers.presentation.models.UsersPresentation
 
 data class ListUsersState(
-    var services: List<UsersPresentation> = listOf(),
-    var error: ErrorServiceState? = null
+    var list: List<UsersPresentation> = listOf(),
+    var isLoading: Boolean = false,
+    var error: ErrorListUsersState? = null
 )
 
-data class ErrorServiceState(
+data class ErrorListUsersState(
     override val code: TypeError,
     override val errorMessage: String
 ): ErrorState<TypeError> {
@@ -17,7 +18,7 @@ data class ErrorServiceState(
         override fun getTypeError(code: Int): TypeError =
             when (code) {
                 TypeError.DEFAULT.ordinal -> TypeError.DEFAULT
-                TypeError.API_FAILURE.ordinal -> TypeError.API_FAILURE
+                TypeError.ERROR_LOADING_USERS_LIST.ordinal -> TypeError.ERROR_LOADING_USERS_LIST
                 else -> TypeError.DEFAULT
             }
     }
@@ -25,5 +26,5 @@ data class ErrorServiceState(
 
 enum class TypeError {
     DEFAULT,
-    API_FAILURE
+    ERROR_LOADING_USERS_LIST
 }

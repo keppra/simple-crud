@@ -11,7 +11,7 @@ interface ApiServices {
     @FormUrlEncoded
     @POST("api/User")
     fun addUser(
-        @Field("name") name: String,
-        @Field("birthdate") birthdate: String
+        @Field("name") name: String?,
+        @Field("birthdate") birthdate: String?
     ): Single<UserModel>
 }

@@ -1,6 +1,6 @@
 package com.simplecrud.listusers.domain.usecases
 
-import com.simplecrud.base.extensions.dispatchers
+import com.simplecrud.base.domain.extensions.dispatchers
 import com.simplecrud.repositories.Repository
 import com.simplecrud.repositories.models.UserDataModel
 import io.reactivex.rxjava3.core.Single

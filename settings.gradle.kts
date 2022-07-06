@@ -8,5 +8,8 @@ include(
     ":features:remove-user",
     ":features:summary",
     ":libraries:api",
-    ":libraries:repositories"
+    ":libraries:k-progress-hud",
+    ":libraries:recyclerview-renders",
+    ":libraries:repositories",
+    ":libraries:utils"
 )
