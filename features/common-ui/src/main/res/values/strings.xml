@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Simple CRUD</string>
     <string name="summary">Summary</string>
-    <string name="remove_user">Remove User</string>
     <string name="error">Error</string>
     <string name="loading">Loading</string>
     <string name="full_name">Full name</string>
     <string name="birthdate">Birthdate</string>
+    <string name="id">Identifier</string>
     <string name="success">Success</string>
     <string name="error_details">Something bad happened, please try it again later or contact with us.</string>
     <string name="alright">Alright</string>
@@ -38,4 +38,10 @@
     <string name="add_user_field_validation_birthdate">The pattern must be yyyy-mm-dd</string>
     <string name="add_user_button">Add user</string>
     <string name="add_user_dialog_success_details">User successfully created</string>
+
+    <!-- remove-user -->
+    <string name="remove_user_header">Remove User</string>
+    <string name="remove_user_subheader">Fill in the id and click on remove user</string>
+    <string name="remove_user_button">Remove user</string>
+    <string name="remove_user_dialog_success_details">User successfully removed</string>
 </resources>

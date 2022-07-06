@@ -1,5 +1,6 @@
 package com.simplecrud.repositories.datasources
 
+import com.simplecrud.api.models.UserModel
 import com.simplecrud.repositories.mappers.UserRetrofitToModelMapper
 import com.simplecrud.repositories.models.UserDataModel
 import com.simplecrud.api.services.Services
@@ -15,8 +16,14 @@ class UsersRemoteDataSourceImp(
             .map { toModelMapper.toMap(it) }
 
     override fun addUser(userDataModel: UserDataModel): Completable =
-        remoteServices.addUser( // TODO (add mapper when DateTime was added)
+        remoteServices.addUser(UserModel(
+            id = userDataModel.id,
             name = userDataModel.name,
             birthdate = userDataModel.birthdate
+        ))
+
+    override fun removeUser(userDataModel: UserDataModel): Completable =
+        remoteServices.removeUser(
+            id = userDataModel.id
         )
 }

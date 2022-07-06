@@ -1,6 +1,7 @@
 package com.simplecrud.api.di
 
 import android.content.Context
+import com.google.gson.Gson
 import com.simplecrud.api.BuildConfig
 import com.simplecrud.api.interceptors.HelloWorldHeaderInterceptor
 import com.simplecrud.api.services.ApiServices
@@ -38,7 +39,6 @@ val apiModule = module {
     single { get<Retrofit>(named(retrofitApiUsers)).create(ApiServices::class.java) }
 
     single { HelloWorldHeaderInterceptor() }
-
 }
 
 private fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit =

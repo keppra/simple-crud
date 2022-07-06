@@ -7,4 +7,5 @@ import io.reactivex.rxjava3.core.Single
 interface UsersRepository {
     fun getUsers(): Single<List<UserDataModel>>
     fun addUser(user: UserDataModel): Completable
+    fun removeUser(user: UserDataModel): Completable
 }

@@ -10,6 +10,9 @@ class ServicesImp(
     override fun getUsers(): Single<List<UserModel>> =
         apiServices.getUsers()
 
-    override fun addUser(name: String?, birthdate: String?): Completable =
-        apiServices.addUser(name = name, birthdate = birthdate)
+    override fun addUser(userModel: UserModel): Completable =
+        apiServices.addUser(userModel)
+
+    override fun removeUser(id: Int?): Completable =
+        apiServices.removeUser(id = id)
 }
