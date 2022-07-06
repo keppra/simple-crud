@@ -1,6 +1,7 @@
 package com.simplecrud.api.services
 
 import com.simplecrud.api.models.UserModel
+import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Single
 
 class ServicesImp(
@@ -9,6 +10,6 @@ class ServicesImp(
     override fun getUsers(): Single<List<UserModel>> =
         apiServices.getUsers()
 
-    override fun addUser(name: String?, birthdate: String?): Single<UserModel> =
+    override fun addUser(name: String?, birthdate: String?): Completable =
         apiServices.addUser(name = name, birthdate = birthdate)
 }

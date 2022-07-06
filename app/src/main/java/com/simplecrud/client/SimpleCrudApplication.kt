@@ -1,6 +1,7 @@
 package com.simplecrud.client
 
 import android.app.Application
+import com.simplecrud.adduser.di.addUserModule
 import com.simplecrud.repositories.di.repositoriesModule
 import com.simplecrud.api.di.apiModule
 import com.simplecrud.client.di.routerModule
@@ -18,10 +19,11 @@ class SimpleCrudApplication: Application() {
             androidContext(this@SimpleCrudApplication)
             modules(
                 listOf(
-                    listUsersModule,
-                    routerModule,
+                    addUserModule,
                     apiModule,
-                    repositoriesModule
+                    listUsersModule,
+                    repositoriesModule,
+                    routerModule
                 )
             )
         }

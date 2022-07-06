@@ -2,6 +2,7 @@
 <resources>
     <color name="black_font">#000000</color>
     <color name="white_font">#FFFFFF</color>
+    <color name="warning_font">#FFFFFF</color>
     <color name="dark_blue_font">#33658A</color>
     <color name="light_blue_font">#86BBD8</color>
 
@@ -13,5 +14,6 @@
     <color name="correct">#758E4F</color>
     <color name="warning">#F6AE2D</color>
     <color name="error">#F26419</color>
-    #3C4F76
+    <color name="gray">#A6B5CB</color>
+    <color name="background">#F4f7f7</color>
 </resources>

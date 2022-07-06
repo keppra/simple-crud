@@ -2,6 +2,7 @@ package com.simplecrud.api.di
 
 import android.content.Context
 import com.simplecrud.api.BuildConfig
+import com.simplecrud.api.interceptors.HelloWorldHeaderInterceptor
 import com.simplecrud.api.services.ApiServices
 import com.simplecrud.api.services.Services
 import com.simplecrud.api.services.ServicesImp
@@ -31,10 +32,12 @@ val apiModule = module {
 
     single(named(retrofitApiUsers)) { provideRetrofit(get(named(okHttpClientApi))) }
 
-    single(named(okHttpClientApi)) { provideOkHttpClient(get()) }
+    single(named(okHttpClientApi)) { provideOkHttpClient(get(), get()) }
 
     single<Services> { ServicesImp(get()) }
     single { get<Retrofit>(named(retrofitApiUsers)).create(ApiServices::class.java) }
+
+    single { HelloWorldHeaderInterceptor() }
 
 }
 
@@ -48,7 +51,8 @@ private fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit =
 
 
 private fun provideOkHttpClient(
-    cache: Cache
+    cache: Cache,
+    headerInterceptor: HelloWorldHeaderInterceptor
 ): OkHttpClient {
     val interceptor = HttpLoggingInterceptor()
     interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
@@ -57,6 +61,7 @@ private fun provideOkHttpClient(
         .connectTimeout(CONNECT_TIMEOUT, TimeUnit.SECONDS)
         .readTimeout(CONNECT_TIMEOUT, TimeUnit.SECONDS)
         .retryOnConnectionFailure(true)
+        //.addInterceptor(headerInterceptor)
         .addInterceptor(interceptor)
         .build()
 }

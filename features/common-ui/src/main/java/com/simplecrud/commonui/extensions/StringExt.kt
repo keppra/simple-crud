@@ -3,7 +3,7 @@ package com.simplecrud.commonui.extensions
 import java.lang.Exception
 import java.time.LocalDate
 
-fun String.fromLocalDateToStringResource(): DateFormatted {
+fun String.fromDateToStringResource(): DateFormatted {
     return try {
         val date = LocalDate.parse(this)
         val day = date.dayOfMonth.toString()

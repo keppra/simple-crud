@@ -11,8 +11,8 @@
         tools:layout="@layout/fragment_summary" />
     <fragment
         android:id="@+id/addUserFragment"
-        android:name="com.simplecrud.adduser.views.AddUserFragment"
-        android:label="@string/add_user"
+        android:name="com.simplecrud.adduser.presentation.views.AddUserFragment"
+        android:label="@string/add_user_header"
         tools:layout="@layout/fragment_add_user" />
     <fragment
         android:id="@+id/listUsersFragment"

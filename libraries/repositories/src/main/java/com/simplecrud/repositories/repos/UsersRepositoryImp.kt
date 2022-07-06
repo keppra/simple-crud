@@ -2,6 +2,7 @@ package com.simplecrud.repositories.repos
 
 import com.simplecrud.repositories.datasources.UsersRemoteDataSource
 import com.simplecrud.repositories.models.UserDataModel
+import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Single
 
 class UsersRepositoryImp(
@@ -10,6 +11,6 @@ class UsersRepositoryImp(
     override fun getUsers(): Single<List<UserDataModel>> =
         remoteSource.getUsers()
 
-    override fun addUser(user: UserDataModel): Single<UserDataModel> =
+    override fun addUser(user: UserDataModel): Completable =
         remoteSource.addUser(user)
 }
