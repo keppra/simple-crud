@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constrainedWidth="true"
+        android:padding="@dimen/general_padding"
+        android:text="@string/remove_user_header"
+        style="@style/OpenSansBold.Black.XXL"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_header"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constrainedWidth="true"
+        android:padding="@dimen/general_padding"
+        android:text="@string/remove_user_subheader"
+        style="@style/OpenSansRegular.Black.L"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/general_padding"
+        app:layout_constraintTop_toBottomOf="@id/tv_description">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_id"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_field_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="@dimen/general_field_radius"
+            app:cardElevation="0dp"
+            android:theme="@style/FieldTheme"
+            android:backgroundTint="@color/white" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeColor="@null"
+                android:layout_marginTop="@dimen/space_sm"
+                app:hintTextAppearance="@style/OpenSansRegular.Black.S"
+                android:textColorHint="@color/gray"
+                tools:hint="Hint"
+                android:inputType="textNoSuggestions"
+                app:endIconTint="@color/gray"
+                app:hintAnimationEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_id"
+                    style="@style/OpenSansBold.Black.L"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/nothing"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/general_padding"
+                    android:paddingEnd="@dimen/general_padding"
+                    android:ellipsize="end"
+                    tools:text="Content"
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_validation_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_id"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:layout_marginTop="@dimen/space_xs"
+            style="@style/OpenSansBold.Yellow.S"
+            android:visibility="gone"
+            tools:text="La contraseña no coincide"
+            android:textColor="@color/warning"
+            tools:visibility="visible"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cl_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/space_xl"
+        android:backgroundTint="@color/material_button_color_selector"
+        android:text="@string/remove_user_button"
+        android:enabled="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

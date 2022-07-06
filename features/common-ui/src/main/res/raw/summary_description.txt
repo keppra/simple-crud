@@ -1,0 +1,3 @@
+I'm Ignacio Castelló, a software programmer who has developed this simple application as a technical test for INNOCV.
+I will be adding improvements in develop but the architecture is already assembled, the application is functional and I didn't want to make you wait any longer.
+Thank you all for check my code, I will appreciate any comments that can help me to improve.

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Preset -->
+    <dimen name="space_xxxs">2dp</dimen>
+    <dimen name="space_xxs">4dp</dimen>
+    <dimen name="space_xs">8dp</dimen>
+    <dimen name="space_s">12dp</dimen>
+    <dimen name="space_sm">16dp</dimen>
+    <dimen name="space_m">24dp</dimen>
+    <dimen name="space_sl">28dp</dimen>
+    <dimen name="space_l">32dp</dimen>
+    <dimen name="space_ml">36dp</dimen>
+    <dimen name="space_mxl">40dp</dimen>
+    <dimen name="space_xl">48dp</dimen>
+    <dimen name="space_xxl">64dp</dimen>
+    <dimen name="space_xxxl">128dp</dimen>
+    <dimen name="space_xxxxl">164dp</dimen>
+    <dimen name="space_xxxxs">1dp</dimen>
+
+    <!-- General -->
+    <dimen name="general_margin">16dp</dimen>
+    <dimen name="general_padding">16dp</dimen>
+    <dimen name="general_field_height">75dp</dimen>
+    <dimen name="general_field_radius">20dp</dimen>
+</resources>
