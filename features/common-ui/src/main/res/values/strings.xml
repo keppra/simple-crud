@@ -34,7 +34,8 @@
     <!-- add-user -->
     <string name="add_user_header">Add User</string>
     <string name="add_user_subheader">Fill in the following fields and click on add user</string>
-    <string name="add_user_field_validation">Input text is not valid</string>
+    <string name="add_user_field_validation_name">The text must be longer than five characters</string>
+    <string name="add_user_field_validation_birthdate">The pattern must be yyyy-mm-dd</string>
     <string name="add_user_button">Add user</string>
     <string name="add_user_dialog_success_details">User successfully created</string>
 </resources>
