@@ -9,6 +9,7 @@
     <string name="success">Success</string>
     <string name="error_details">Something bad happened, please try it again later or contact with us.</string>
     <string name="alright">Alright</string>
+    <string name="uncle_bob">Uncle Bob</string>
 
     <!-- Months -->
     <string name="january">January</string>
@@ -44,4 +45,8 @@
     <string name="remove_user_subheader">Fill in the id and click on remove user</string>
     <string name="remove_user_button">Remove user</string>
     <string name="remove_user_dialog_success_details">User successfully removed</string>
+
+    <!-- summary -->
+    <string name="summary_hello">Hello,</string>
+    <string name="summary_text">I am Ignacio Castelló, a 34-year-old software programmer who has developed this simple application as a technical test for access to INNOCV.\nThis is what I have been able to do in two days but if I have time I will add some features to the develop branch.\nI hope Uncle Bob approves of this architecture. </string>
 </resources>
