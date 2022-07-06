@@ -2,7 +2,7 @@ package com.simplecrud.listusers.presentation.mappers
 
 import android.content.Context
 import com.example.commonui.R
-import com.simplecrud.commonui.extensions.fromLocalDateToStringResource
+import com.simplecrud.commonui.extensions.fromDateToStringResource
 import com.simplecrud.commonui.extensions.DateFormatted
 import com.simplecrud.listusers.presentation.models.DescriptionPresentation
 import com.simplecrud.listusers.presentation.models.ItemPresentation
@@ -29,7 +29,7 @@ class ListUsersMapperRenderables(
         ItemRow(
             id = UUID.randomUUID().toString(),
             name = item.name,
-            birthdate = printBirthDate(item.birthdate.take(10).fromLocalDateToStringResource())
+            birthdate = printBirthDate(item.birthdate.take(10).fromDateToStringResource())
         )
 
     private fun printBirthDate(dateFormatted: DateFormatted): String =

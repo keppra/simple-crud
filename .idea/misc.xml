@@ -12,7 +12,12 @@
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_remove_user.xml" value="0.1" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_summary.xml" value="0.11875" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/menu/bottom_navigation_items.xml" value="0.11875" />
-        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/add-user/src/main/res/layout/fragment_add_user.xml" value="0.1" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/add-user/src/main/res/layout/fragment_add_user.xml" value="0.16" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/common-ui/src/main/res/drawable/nothing.xml" value="0.196" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/common-ui/src/main/res/layout/custom_dialog_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/common-ui/src/main/res/layout/custom_field_text_validation_layout.xml" value="0.23092105263157894" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/common-ui/src/main/res/layout/custom_layout.xml" value="0.75" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/common-ui/src/main/res/layout/dialog_round_corners.xml" value="0.1" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/list-users/src/main/res/layout/fragment_list_users.xml" value="0.33" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/list-users/src/main/res/layout/renderable_list_users_description.xml" value="0.21" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/list-users/src/main/res/layout/renderable_list_users_item.xml" value="0.33" />

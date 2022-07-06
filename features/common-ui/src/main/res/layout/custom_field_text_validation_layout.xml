@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_field_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/general_field_radius"
+        app:cardElevation="0dp"
+        android:theme="@style/FieldTheme"
+        android:backgroundTint="@color/white" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@null"
+            android:layout_marginTop="@dimen/space_sm"
+            app:hintTextAppearance="@style/OpenSansRegular.Black.S"
+            android:textColorHint="@color/gray"
+            tools:hint="Hint"
+            android:inputType="textNoSuggestions"
+            app:endIconTint="@color/gray"
+            app:hintAnimationEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et"
+                style="@style/OpenSansBold.Black.L"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/nothing"
+                android:maxLines="1"
+                android:paddingStart="@dimen/general_padding"
+                android:paddingEnd="@dimen/general_padding"
+                android:ellipsize="end"
+                tools:text="Content"
+                android:inputType="textNoSuggestions"
+                android:importantForAutofill="no" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tv_validation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv"
+        android:layout_marginStart="@dimen/general_margin"
+        android:layout_marginEnd="@dimen/general_margin"
+        android:layout_marginTop="@dimen/space_xs"
+        style="@style/OpenSansBold.Yellow.S"
+        android:visibility="gone"
+        tools:text="La contraseña no coincide"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

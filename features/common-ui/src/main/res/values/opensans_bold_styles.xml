@@ -51,5 +51,97 @@
         <item name="android:lineSpacingExtra">3sp</item>
     </style>
 
+    <!-- Orange Color -->
+
+    <style name="OpenSansBold.Yellow">
+        <item name="android:textColor">@color/warning_font</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.XXXS">
+        <item name="android:textSize">8sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.XXS">
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.S">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.M">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.L">
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.XL">
+        <item name="android:textSize">21sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.XXL">
+        <item name="android:textSize">26sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Yellow.XXXL">
+        <item name="android:textSize">35sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <!-- White Color -->
+
+    <style name="OpenSansBold.White">
+        <item name="android:textColor">@color/white_font</item>
+    </style>
+
+    <style name="OpenSansBold.White.XXXS">
+        <item name="android:textSize">8sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.XXS">
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.S">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.M">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.L">
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.XL">
+        <item name="android:textSize">21sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.XXL">
+        <item name="android:textSize">26sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.White.XXXL">
+        <item name="android:textSize">35sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
 
 </resources>

@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">Simple CRUD</string>
     <string name="summary">Summary</string>
-    <string name="list_users">List Users</string>
-    <string name="add_user">Add User</string>
     <string name="remove_user">Remove User</string>
     <string name="error">Error</string>
     <string name="loading">Loading</string>
+    <string name="full_name">Full name</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="success">Success</string>
+    <string name="error_details">Something bad happened, please try it again later or contact with us.</string>
+    <string name="alright">Alright</string>
 
     <!-- Months -->
     <string name="january">January</string>
@@ -22,8 +25,16 @@
     <string name="december">December</string>
 
     <!-- list-users -->
-    <string name="list_users_header">Los usuarios activos en nuestra base de datos son los siguientes:</string>
-    <string name="list_users_renderable_description">Active users in our database are:</string>
+    <string name="list_users">List Users</string>
+    <string name="list_users_header">List Users</string>
+    <string name="list_users_renderable_description">Active users in our database are the next. Scroll up to refresh the list.</string>
     <string name="list_users_renderable_not_specified">This field was empty</string>
     <string name="list_users_renderable_birthdate">%1s of %2s, %3s</string>
+
+    <!-- add-user -->
+    <string name="add_user_header">Add User</string>
+    <string name="add_user_subheader">Fill in the following fields and click on add user</string>
+    <string name="add_user_field_validation">Input text is not valid</string>
+    <string name="add_user_button">Add user</string>
+    <string name="add_user_dialog_success_details">User successfully created</string>
 </resources>
