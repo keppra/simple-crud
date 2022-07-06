@@ -29,6 +29,8 @@ object UIDependencies {
     val constraintlayout by lazy { "androidx.constraintlayout:constraintlayout:${DependenciesVersion.constraintlayout}" }
     val material by lazy { "com.google.android.material:material:${DependenciesVersion.material}" }
     val navigation_ui by lazy { "androidx.navigation:navigation-ui-ktx:${DependenciesVersion.nav_version}" }
+    val recyclerView by lazy { "androidx.recyclerview:recyclerview:${DependenciesVersion.recycler_view}" }
+    val swipeRefreshLayout by lazy { "androidx.swiperefreshlayout:swiperefreshlayout:${DependenciesVersion.swipeRefreshLayout}" }
 }
 
 object TestingDependencies {

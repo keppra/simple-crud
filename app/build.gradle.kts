@@ -7,8 +7,12 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":features:add-user"))
     implementation(project(":features:base"))
     implementation(project(":features:common-ui"))
+    implementation(project(":features:list-users"))
+    implementation(project(":features:remove-user"))
+    implementation(project(":features:summary"))
     implementation(project(":libraries:api"))
     implementation(project(":libraries:repositories"))
     implementation(CoreDependencies.navigation_fragment)

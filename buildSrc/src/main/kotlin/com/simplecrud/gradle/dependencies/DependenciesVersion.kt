@@ -14,9 +14,11 @@ object DependenciesVersion {
     const val material = "1.6.0"
     const val nav_version = "2.4.2"
     const val okhttp = "4.9.3"
+    const val recycler_view = "1.2.1"
     const val retrofit = "2.9.0"
     const val room = "2.4.2"
     const val rxjava = "3.1.4"
     const val rxandroid = "3.0.0"
     const val rxkotlin = "3.0.1"
+    const val swipeRefreshLayout = "1.1.0"
 }

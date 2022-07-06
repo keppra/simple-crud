@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OpenSansBold" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <!--  Black Color-->
+
+    <style name="OpenSansBold.Black">
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <style name="OpenSansBold.Black.XXXS">
+        <item name="android:textSize">8sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Black.XXS">
+        <item name="android:textSize">11sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Black.S">
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+    </style>
+
+    <style name="OpenSansBold.Black.M">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+
+    </style>
+
+    <style name="OpenSansBold.Black.L">
+        <item name="android:textSize">17sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Black.XL">
+        <item name="android:textSize">21sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Black.XXL">
+        <item name="android:textSize">26sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="OpenSansBold.Black.XXXL">
+        <item name="android:textSize">35sp</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+
+</resources>

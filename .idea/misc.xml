@@ -12,6 +12,15 @@
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_remove_user.xml" value="0.1" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/layout/fragment_summary.xml" value="0.11875" />
         <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/app/src/main/res/menu/bottom_navigation_items.xml" value="0.11875" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/add-user/src/main/res/layout/fragment_add_user.xml" value="0.1" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/list-users/src/main/res/layout/fragment_list_users.xml" value="0.33" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/list-users/src/main/res/layout/renderable_list_users_description.xml" value="0.21" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/list-users/src/main/res/layout/renderable_list_users_item.xml" value="0.33" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/remove-user/src/main/res/layout/fragment_remove_user.xml" value="0.1" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/features/summary/src/main/res/layout/fragment_summary.xml" value="0.22269736842105264" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/libraries/k-progress-hud/src/main/res/layout/kprogresshud_hud.xml" value="0.1" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/libraries/recyclerview-renders/src/main/res/drawable/ic_launcher_background.xml" value="0.196" />
+        <entry key="..\:/Users/Ignacio/AndroidStudioProjects/simple-crud/libraries/recyclerview-renders/src/main/res/layout/empty_row.xml" value="0.11875" />
       </map>
     </option>
   </component>

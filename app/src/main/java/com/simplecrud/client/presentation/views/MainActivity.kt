@@ -1,11 +1,7 @@
 package com.simplecrud.client.presentation.views
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.simplecrud.base.presentation.BaseActivity
@@ -19,13 +15,13 @@ class MainActivity : BaseActivity() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
-        val appBarConfiguration = AppBarConfiguration(setOf(
+        /*val appBarConfiguration = AppBarConfiguration(setOf(
             R.id.summaryFragment,
             R.id.listUsersFragment,
             R.id.addUserFragment,
             R.id.removeUserFragment)
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        setupActionBarWithNavController(navController, appBarConfiguration)*/
 
         bottomNavigationView.setupWithNavController(navController)
     }
